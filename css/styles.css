@@ -58,7 +58,6 @@ body {
   background-image: url("../images/coffee.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-size: auto;
 }
 
 
@@ -68,18 +67,67 @@ header {
   padding: 1rem 0rem;
 }
 
+nav {
+  text-align: right;
+}
+nav li {
+  display:inline;
+  margin-right: 1rem;
+}
+
+nav a {
+  text-decoration-line: none;
+  color: var(--white-color);
+  font-size: 1.9rem;
+}
 
 /* main */
+main {
+  background-color: var(--white-color);
+  width: 80%;
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 1rem 0;
+}
 
-
+.content-wrapper{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 
 /* About section */
+#about {
+  margin-bottom: 1rem;
+}
 
+#about p {
+  max-width: 60ch;
+  margin-bottom: 0.5rem;
+}
 
-
+#about li {
+  list-style: none;
+  background-image: url(../images/logo.png);
+  background-repeat: no-repeat;
+  background-size: 1em 1em;
+  padding-left: 1.5em;
+  background-position: 0 0.2em;
+}
 
 /*Menu section*/
+#menu {
+  margin-bottom: 1rem;
+}
+
+#menu h4 {
+  text-align: center;
+}
+
+#menu section:last-child {
+  margin-top: 1rem;
+}
 
 .item p {
   display: inline-block;
@@ -98,8 +146,40 @@ header {
 
 
 /*Reservation section*/
+input, select, textarea {
+  font: inherit;
+  color: var(--black-color);
+}
 
+label {
+  display: block;
+  color: var(--black75);
+}
 
+input, textarea {
+  background-color: #d6ab8f;
+  border: none;
+  width: 100%;
+  margin-bottom: 0.5em;
+}
 
+input[type="submit"] {
+  font-size: 1.25rem;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  padding: 0.5em 0;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: var(--secondary-color);
+}
 
 /*footer*/
+footer {
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+  text-align: center;
+  padding: 1rem 0;
+}
